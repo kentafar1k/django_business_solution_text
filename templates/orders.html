@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        .header input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            border: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .header button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .header button:hover {
+            background-color: #218838;
+        }
+        .auth-button {
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #6c757d;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .auth-button:hover {
+            background-color: #5a6268;
+        }
+        .orders {
+            margin: 20px;
+        }
+        .order {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .order div {
+            flex: 1;
+            text-align: center;
+        }
+        .order div:not(:last-child) {
+            border-right: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <input type="text" placeholder="Search orders...">
+            <button>Add Order</button>
+        </div>
+        <button class="auth-button">Login/Register</button>
+    </div>
+    <div class="orders">
+        <div class="order">
+            <div>Order #12345</div>
+            <div>Paid</div>
+            <div>Shipped</div>
+        </div>
+        <div class="order">
+            <div>Order #12346</div>
+            <div>Unpaid</div>
+            <div>Pending</div>
+        </div>
+        <div class="order">
+            <div>Order #12347</div>
+            <div>Paid</div>
+            <div>Delivered</div>
+        </div>
+    </div>
+</body>
+</html>
